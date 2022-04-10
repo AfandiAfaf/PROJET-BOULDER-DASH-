@@ -1,0 +1,173 @@
+
+body {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("../img/background.gif");
+    min-height: 900px;
+}
+
+
+#buttons{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: violet;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 650px;
+    color: white;
+    font-size: large;
+    font-family: Pixeled, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px outset #fff;
+    cursor: pointer;
+}
+
+#file {
+    display: none;
+}
+
+hr {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    height: 2px;
+    border: none;
+}
+
+.title {
+    color: blueviolet;
+    font-family: Pixeled, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-shadow: #fff -2px -2px;
+    margin: 0;
+    text-align: center;
+    font-size: 45px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: ridge violet 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.85);
+}
+
+#deleteLevel{
+    width: 900px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color: violet;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border: dashed 8px rgba(0, 0, 0, 1);
+}
+
+.divMapDelete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.divMapDelete > h1 {
+    color: #fff;
+    font-family: Pixeled, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#modifyLevelsOrder{
+    width: 1100px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    background-color:violet;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border: dashed 8px rgba(0, 0, 0, 1);
+}
+
+.divLevel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.divLevel > h1 {
+    color: #fff;
+    font-family: Pixeled, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.divMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.divButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrowBtn {
+    width: 80px;
+    height: 60px;
+}
+
+.arrowImg {
+    width: 50px;
+}
+
+boulderdash {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 20px);
+    grid-template-columns: repeat(var(--grid-cols), 20px);
+    border : 20px solid transparent;
+    border-image: url(../img/textures/border.png);
+    border-image-slice: 160;
+    border-image-repeat: round;
+}
+
+.grid-item {
+    background-size: cover;
+}
