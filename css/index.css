@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("../img/background.gif");
+    min-height: 800px;
+}
+
+header > img {
+    width: 600px;
+}
+
+#buttons{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 450px;
+    color: white;
+    font-size: large;
+    font-family: Pixeled, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-color:violet;
+    cursor: pointer;
+}
+
+
+#loadSavedGameB {
+    display: none;
+}
