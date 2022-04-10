@@ -26,7 +26,6 @@ function loadSavedGame() {
 }
 
 document.getElementById("newGameB").addEventListener("click", newGame);
-
 document.getElementById("loadSavedGameB").addEventListener("click", loadSavedGame);
-document.getElementById("levelsManagementB").addEventListener("click", () => { window.location.href='html/levels_management.html'; });
+
 
