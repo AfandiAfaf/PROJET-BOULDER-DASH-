@@ -30,7 +30,7 @@ for (var i=0; i<nombre_ligne; i++){
 
 //Remplissage de la grille de jeu
 for (var i=0; i<nombre_ligne; i++){
-    for (var j=0; i<nombre_colonne; j++){
+    for (var j=0; j<nombre_colonne; j++){
         tab[i][j]='T';
     }
 }
@@ -47,34 +47,34 @@ function affichagegrille(){
 
     for (var i=0; i<tab.length; i++){
         texte +="<div>";
-        for (var j=0; i<tab[i].length; j++){
+        for (var j=0; j<tab[i].length; j++){
             if(i==0 || i==(nombre_ligne-1) || j==0 || j==(nombre_colonne-1) ){
                 texte += "<img src='img/textures/border.png' style='width:100px;height:100px'>";
             }
             else {
                 switch(tab[i][j]){
                     case case_diamond: 
-                        texte += "img/textures/diamond.gif";
+                        texte += "<img src='img/textures/diamond.gif'>";
                         break;
                     case case_terre: 
-                        texte += "img/textures/dirt.png";
+                        texte += "<img src='img/textures/dirt.png'>";
                         break;
                     case case_rocher: 
-                        texte += "img/textures/stone.png";
+                        texte += "<img src='img/textures/stone.png'>";
                         break;
                     case case_mur: 
-                        texte += "img/textures/wall.png";
+                        texte += "<img src='img/textures/wall.png'>";
                         break;
                     case case_vide: 
-                        texte += "img/textures/background.png";
+                        texte += "<img src='img/textures/background.png'>";
                         break;
                     case case_position: 
                         x=i;
                         y=j;
-                        texte += "img/textures/rockford.gif";
+                        texte += "<img src='img/textures/rockford.gif'>";
                         break;
                     case case_rockford_dead: 
-                        texte += "img/textures/rockfordmort.png";
+                        texte += "<img src='img/textures/rockfordmort.png'>";
                         break;
                     default:
                 }
@@ -113,7 +113,7 @@ function toucheclavierdown(a){
             default :
                 console.log('IMPOSSIBLE MOUVEMENT')
         }
-        tableau();
+        affichagegrille();
     }
 
     else if(a.keyCode == KEY_Q){
@@ -150,7 +150,7 @@ function toucheclavierdown(a){
             default:
                 console.log('IMPOSSIBLE MOUVEMENT')
         } 
-        tableau();
+        affichagegrille();
     }
 
     else if(a.keyCode == KEY_S){
@@ -177,7 +177,7 @@ function toucheclavierdown(a){
             default:
                 console.log('IMPOSSIBLE MOUVEMENT')
         } 
-        tableau();
+        affichagegrille();
     }
     else if(a.keyCode == KEY_D){
         switch(tab[x][y+1]){
@@ -212,7 +212,7 @@ function toucheclavierdown(a){
         default:
             console.log('IMPOSSIBLE MOUVEMENT')
         } 
-        tableau();
+        affichagegrille();
     }
 
 }
